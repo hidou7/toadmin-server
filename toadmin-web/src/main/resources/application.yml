@@ -1,0 +1,27 @@
+server:
+  port: 18888
+  
+spring:
+  redis:
+    host: 175.178.56.249
+    port: 16379
+    password: 4clz#oty!dub
+  datasource:
+    url: jdbc:postgresql://175.178.56.249:25432/toadmin
+    username: zyb_dev
+    password: 4txtz5fqed0!
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*/*Mapper.xml
+  typeAliasesPackage: com.hidou7.toadmin.web.*.entity
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+knife4j:
+  enable: true
+
+token:
+  secretKey: e12190de56514755afff148c654e87f3
