@@ -178,7 +178,7 @@ comment on column sys_menu.updater is '更新者';
 comment on column sys_menu.update_time is '更新时间';
 comment on column sys_menu.deleted is '删除时间戳(0=正常)';
 
--- insert into sys_menu values (1, 0, '系统管理', );
+insert into sys_menu values (1, 0, '系统管理', 1, 'system', , , 1, 99, 1, now(), 1, now(), 0);
 
 -- 角色菜单关联表
 create table sys_role_menu (
